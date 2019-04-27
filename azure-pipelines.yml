@@ -38,3 +38,12 @@ stages:
       inputs:
         platform: '$(buildPlatform)'
         configuration: '$(buildConfiguration)'
+
+    - task: PowerShell@2
+      inputs:
+        targetType: 'inline'
+        script: '# Write your powershell commands here.
+          
+          Write-Host "Hello World"
+          
+          # Use the environment variables input below to pass secret variables to this script.'
