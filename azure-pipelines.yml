@@ -39,7 +39,7 @@ stages:
         platform: '$(buildPlatform)'
         configuration: '$(buildConfiguration)'
 
-    - script: Write-Host "Hello World 2"
+    - powershell: Write-Host "Hello World 2"
 
     - task: PowerShell@2
       inputs:
