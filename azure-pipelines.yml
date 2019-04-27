@@ -6,9 +6,6 @@
 trigger:
 - master
 
-# pool:
-#   vmImage: 'VS2017-Win2016'
-
 variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
@@ -20,6 +17,8 @@ stages:
   jobs:
   - job: s1job
     displayName: s1 job
+    pool:
+      vmImage: 'VS2017-Win2016'
     steps:
     - task: NuGetToolInstaller@0
 
