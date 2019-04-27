@@ -16,7 +16,11 @@ variables:
 
 stages:
 - stage: s1
-  steps:
+  displayName: Build stage
+  jobs:
+  - job: s1-job
+    displayName: s1 job
+    steps:
   - task: NuGetToolInstaller@0
 
   - task: NuGetCommand@2
