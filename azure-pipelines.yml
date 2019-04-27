@@ -15,7 +15,7 @@ variables:
   buildConfiguration: 'Release'
 
 stages:
-- stage:
+- stage: s1
   steps:
   - task: NuGetToolInstaller@0
 
