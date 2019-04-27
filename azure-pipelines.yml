@@ -18,7 +18,7 @@ stages:
 - stage: s1
   displayName: Build stage
   jobs:
-  - job: s1-job
+  - job: s1job
     displayName: s1 job
     steps:
     - task: NuGetToolInstaller@0
